@@ -1,49 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body,
 #root {
-  height: 100%;
-  width: 100%;
-}
-
-#root {
-  background: radial-gradient(
-        circle,
-        transparent 20%,
-        #0c3940 20%,
-        #0c3940 80%,
-        transparent 80%,
-        transparent
-      )
-      0% 0% / 50px 50px,
-    radial-gradient(
-        circle,
-        transparent 20%,
-        #0c3940 20%,
-        #0c3940 80%,
-        transparent 80%,
-        transparent
-      )
-      25px 25px / 50px 50px,
-    linear-gradient(#076a7c 1px, transparent 1px) 0px -0.5px / 25px 25px,
-    linear-gradient(90deg, #076a7c 1px, #0c3940 1px) -0.5px 0px / 25px 25px #0c3940;
-  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
-  background-color: #0c3940;
-}
-
-.app {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 .logo {
