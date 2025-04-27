@@ -54,12 +54,6 @@ body {
   z-index: 1;
 }
 
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #fff;
-}
-
 /* Hero Section */
 #hero {
   background: radial-gradient(
@@ -349,10 +343,6 @@ body {
     font-size: 1.5rem;
   }
 
-  .section-title {
-    font-size: 2rem;
-  }
-
   .section {
     padding: 1rem;
   }
@@ -389,10 +379,6 @@ body {
 
   .hero-content h2 {
     font-size: 1.2rem;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
   }
 
   .hero-description {

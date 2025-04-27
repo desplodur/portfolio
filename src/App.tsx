@@ -84,7 +84,6 @@ function App() {
 
       <section id="about" className="section">
         <h2 className="section-heading">About</h2>
-        <h2 className="section-title">About Me</h2>
         <div className="about-content">
           <p>
             I'm a passionate developer with expertise in building web
@@ -97,7 +96,6 @@ function App() {
 
       <section id="skills" className="section">
         <h2 className="section-heading">Skills</h2>
-        <h2 className="section-title">Skills</h2>
         <div className="skills-grid">
           <div className="skill-card">
             <h3>Frontend</h3>
@@ -131,7 +129,6 @@ function App() {
 
       <section id="projects" className="section">
         <h2 className="section-heading">Projects</h2>
-        <h2 className="section-title">Projects</h2>
         <div className="projects-grid">
           <div className="project-card">
             <h3>Project 1</h3>
@@ -162,7 +159,6 @@ function App() {
 
       <section id="contact" className="section">
         <h2 className="section-heading">Contact</h2>
-        <h2 className="section-title">Get In Touch</h2>
         <div className="contact-content">
           <p>I'm always open to new opportunities and collaborations.</p>
           <div className="contact-links">
