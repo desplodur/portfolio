@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import AboutSection from "./sections/AboutSection";
 import ContactSection from "./sections/ContactSection";
@@ -41,19 +42,28 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      <SectionIndicator sections={sections} activeSection={activeSection} />
-
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <ContactSection />
-
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
-      </footer>
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <SectionIndicator
+                  sections={sections}
+                  activeSection={activeSection}
+                />
+                <HeroSection />
+                <AboutSection />
+                <SkillsSection />
+                <ProjectsSection />
+                <ContactSection />
+              </>
+            }
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
