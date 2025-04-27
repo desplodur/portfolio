@@ -1,8 +1,73 @@
+import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
+  const [activeSection, setActiveSection] = useState("hero");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of the section is visible
+      }
+    );
+
+    // Observe all sections
+    const sections = ["hero", "about", "skills", "projects", "contact"];
+    sections.forEach((section) => {
+      const element = document.getElementById(section);
+      if (element) observer.observe(element);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) observer.unobserve(element);
+      });
+    };
+  }, []);
+
   return (
     <div className="app">
+      <div className="section-indicator">
+        <a
+          href="#hero"
+          className={`indicator-dot ${
+            activeSection === "hero" ? "active" : ""
+          }`}
+        />
+        <a
+          href="#about"
+          className={`indicator-dot ${
+            activeSection === "about" ? "active" : ""
+          }`}
+        />
+        <a
+          href="#skills"
+          className={`indicator-dot ${
+            activeSection === "skills" ? "active" : ""
+          }`}
+        />
+        <a
+          href="#projects"
+          className={`indicator-dot ${
+            activeSection === "projects" ? "active" : ""
+          }`}
+        />
+        <a
+          href="#contact"
+          className={`indicator-dot ${
+            activeSection === "contact" ? "active" : ""
+          }`}
+        />
+      </div>
+
       <section id="hero" className="section">
         <div className="hero-content">
           <h1>
