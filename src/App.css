@@ -97,18 +97,39 @@ body {
 
 /* Hero Section */
 #hero {
-  background: radial-gradient(circle at 30% 30%, #2c3e50, #1a1a1a);
+  background: radial-gradient(
+        circle,
+        transparent 20%,
+        #2c3e50 20%,
+        #2c3e50 80%,
+        transparent 80%,
+        transparent
+      )
+      0% 0% / 50px 50px,
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #2c3e50 20%,
+        #2c3e50 80%,
+        transparent 80%,
+        transparent
+      )
+      25px 25px / 50px 50px,
+    linear-gradient(#34495e 1px, transparent 1px) 0px -0.5px / 25px 25px,
+    linear-gradient(90deg, #34495e 1px, #2c3e50 1px) -0.5px 0px / 25px 25px #2c3e50;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.8);
 }
 
 .hero-content {
   grid-column: 2 / span 10;
   text-align: center;
   padding: 4rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: #34495e;
   border-radius: 0;
-  backdrop-filter: blur(5px);
   position: relative;
   clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.4);
 }
 
 .hero-content::before {
@@ -188,7 +209,27 @@ body {
 
 /* Skills Section */
 #skills {
-  background: linear-gradient(45deg, #8e44ad, #9b59b6);
+  background: radial-gradient(
+        circle,
+        transparent 20%,
+        #8e44ad 20%,
+        #8e44ad 80%,
+        transparent 80%,
+        transparent
+      )
+      0% 0% / 50px 50px,
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #8e44ad 20%,
+        #8e44ad 80%,
+        transparent 80%,
+        transparent
+      )
+      25px 25px / 50px 50px,
+    linear-gradient(#9b59b6 1px, transparent 1px) 0px -0.5px / 25px 25px,
+    linear-gradient(90deg, #9b59b6 1px, #8e44ad 1px) -0.5px 0px / 25px 25px #8e44ad;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 .skills-grid {
@@ -200,7 +241,7 @@ body {
 }
 
 .skill-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: #9b59b6;
   padding: 2.5rem;
   transform: rotate(var(--rotation));
   transition: all 0.3s ease;
@@ -256,7 +297,27 @@ body {
 
 /* Projects Section */
 #projects {
-  background: linear-gradient(-45deg, #e74c3c, #c0392b);
+  background: radial-gradient(
+        circle,
+        transparent 20%,
+        #e74c3c 20%,
+        #e74c3c 80%,
+        transparent 80%,
+        transparent
+      )
+      0% 0% / 50px 50px,
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #e74c3c 20%,
+        #e74c3c 80%,
+        transparent 80%,
+        transparent
+      )
+      25px 25px / 50px 50px,
+    linear-gradient(#c0392b 1px, transparent 1px) 0px -0.5px / 25px 25px,
+    linear-gradient(90deg, #c0392b 1px, #e74c3c 1px) -0.5px 0px / 25px 25px #e74c3c;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 .projects-grid {
@@ -267,7 +328,7 @@ body {
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: #c0392b;
   padding: 2.5rem;
   position: relative;
   overflow: hidden;
@@ -355,13 +416,34 @@ body {
 
 /* Contact Section */
 #contact {
-  background: linear-gradient(135deg, #f39c12, #d35400);
+  background: radial-gradient(
+        circle,
+        transparent 20%,
+        #f39c12 20%,
+        #f39c12 80%,
+        transparent 80%,
+        transparent
+      )
+      0% 0% / 50px 50px,
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #f39c12 20%,
+        #f39c12 80%,
+        transparent 80%,
+        transparent
+      )
+      25px 25px / 50px 50px,
+    linear-gradient(#d35400 1px, transparent 1px) 0px -0.5px / 25px 25px,
+    linear-gradient(90deg, #d35400 1px, #f39c12 1px) -0.5px 0px / 25px 25px #f39c12;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .contact-content {
   grid-column: 4 / span 6;
   padding: 4rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: #d35400;
   position: relative;
   clip-path: polygon(
     0 0,
@@ -531,13 +613,33 @@ body {
 
 /* About Section */
 #about {
-  background: linear-gradient(135deg, #16a085, #1abc9c);
+  background: radial-gradient(
+        circle,
+        transparent 20%,
+        #16a085 20%,
+        #16a085 80%,
+        transparent 80%,
+        transparent
+      )
+      0% 0% / 50px 50px,
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #16a085 20%,
+        #16a085 80%,
+        transparent 80%,
+        transparent
+      )
+      25px 25px / 50px 50px,
+    linear-gradient(#1abc9c 1px, transparent 1px) 0px -0.5px / 25px 25px,
+    linear-gradient(90deg, #1abc9c 1px, #16a085 1px) -0.5px 0px / 25px 25px #16a085;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 .about-content {
   grid-column: 3 / span 8;
   padding: 4rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: #1abc9c;
   transform: skew(-5deg);
   position: relative;
 }
