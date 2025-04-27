@@ -3,18 +3,6 @@ import "./App.css";
 function App() {
   return (
     <div className="app">
-      <nav className="nav">
-        <div className="nav-content">
-          <span className="logo">Your Name</span>
-          <div className="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-      </nav>
-
       <section id="hero" className="section">
         <div className="hero-content">
           <h1>
