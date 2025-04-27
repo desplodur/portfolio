@@ -42,6 +42,18 @@ body {
   position: relative;
 }
 
+.section-heading {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 2rem;

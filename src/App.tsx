@@ -69,6 +69,7 @@ function App() {
       </div>
 
       <section id="hero" className="section">
+        <h2 className="section-heading">Hero</h2>
         <div className="hero-content">
           <h1>
             Hi, I'm <span className="highlight">Your Name</span>
@@ -82,6 +83,7 @@ function App() {
       </section>
 
       <section id="about" className="section">
+        <h2 className="section-heading">About</h2>
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
           <p>
@@ -94,6 +96,7 @@ function App() {
       </section>
 
       <section id="skills" className="section">
+        <h2 className="section-heading">Skills</h2>
         <h2 className="section-title">Skills</h2>
         <div className="skills-grid">
           <div className="skill-card">
@@ -127,6 +130,7 @@ function App() {
       </section>
 
       <section id="projects" className="section">
+        <h2 className="section-heading">Projects</h2>
         <h2 className="section-title">Projects</h2>
         <div className="projects-grid">
           <div className="project-card">
@@ -157,6 +161,7 @@ function App() {
       </section>
 
       <section id="contact" className="section">
+        <h2 className="section-heading">Contact</h2>
         <h2 className="section-title">Get In Touch</h2>
         <div className="contact-content">
           <p>I'm always open to new opportunities and collaborations.</p>
