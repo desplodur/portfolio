@@ -1,9 +1,30 @@
+/* General Reset */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --highlight-color: #000;
+  --cta-bg-color: #076a7c;
+  --cta-border-color: #000;
+  --cta-hover-transform: translate(-4px, -4px);
+  --cta-hover-shadow: 12px 12px 0 #000;
+  --cta-active-transform: translate(0, 0);
+  --cta-active-shadow: 4px 4px 0 #000;
+  --font-family: "Inter", sans-serif;
+  --section-padding: 2rem;
+  --section-heading-color: rgba(255, 255, 255, 0.9);
+  --section-heading-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  --section-heading-bg: rgba(0, 0, 0, 0.2);
+  --section-heading-transform: rotate(-5deg);
+  --section-heading-clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Global Styles */
 html,
 body {
   height: 100%;
@@ -19,7 +40,7 @@ body {
   scroll-snap-type: y mandatory;
   background: white;
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-family);
 }
 
 .app {
@@ -29,10 +50,10 @@ body {
   flex-direction: column;
 }
 
-/* Sections */
+/* Section Styles */
 .section {
   min-height: 100vh;
-  padding: 2rem;
+  padding: var(--section-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +64,8 @@ body {
   overflow: hidden;
 }
 
-.section::before {
+.section::before,
+.section::after {
   content: "";
   position: absolute;
   top: 0;
@@ -55,15 +77,11 @@ body {
 }
 
 .section::after {
-  content: "";
-  position: absolute;
   top: 50%;
   left: 50%;
   width: 150%;
   height: 150%;
-  background: inherit;
   transform: translate(-50%, -50%) rotate(45deg);
-  z-index: 0;
   opacity: 0.1;
 }
 
@@ -86,13 +104,13 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--section-heading-color);
   z-index: 2;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  transform: rotate(-5deg);
+  text-shadow: var(--section-heading-shadow);
+  transform: var(--section-heading-transform);
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.2);
-  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+  background: var(--section-heading-bg);
+  clip-path: var(--section-heading-clip-path);
 }
 
 /* Hero Section */
@@ -100,8 +118,8 @@ body {
   background: radial-gradient(
         circle,
         transparent 20%,
-        #2c3e50 20%,
-        #2c3e50 80%,
+        var(--primary-color) 20%,
+        var(--primary-color) 80%,
         transparent 80%,
         transparent
       )
@@ -109,15 +127,14 @@ body {
     radial-gradient(
         circle,
         transparent 20%,
-        #2c3e50 20%,
-        #2c3e50 80%,
+        var(--primary-color) 20%,
+        var(--primary-color) 80%,
         transparent 80%,
         transparent
       )
       25px 25px / 50px 50px,
-    linear-gradient(#34495e 1px, transparent 1px) 0px -0.5px / 25px 25px,
-    linear-gradient(90deg, #34495e 1px, #2c3e50 1px) -0.5px 0px / 25px 25px #2c3e50;
-  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+    linear-gradient(var(--secondary-color) 1px, transparent 1px) 0px -0.5px / 25px 25px,
+    linear-gradient(90deg, var(--secondary-color) 1px, var(--primary-color) 1px) -0.5px 0px / 25px 25px var(--primary-color);
   box-shadow: 0 12px 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -125,22 +142,10 @@ body {
   grid-column: 2 / span 10;
   text-align: center;
   padding: 4rem;
-  background: #34495e;
-  border-radius: 0;
+  background: var(--secondary-color);
   position: relative;
   clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
   box-shadow: 0 8px 32px rgba(44, 62, 80, 0.4);
-}
-
-.hero-content::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 100px;
-  height: 100px;
-  background: rgba(255, 255, 255, 0.05);
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .hero-content h1 {
@@ -154,12 +159,12 @@ body {
 .hero-content h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #000;
+  color: var(--highlight-color);
   font-weight: 700;
 }
 
 .highlight {
-  color: #000;
+  color: var(--highlight-color);
   font-weight: 800;
   position: relative;
   display: inline-block;
@@ -172,7 +177,7 @@ body {
   left: 0;
   width: 100%;
   height: 4px;
-  background: #000;
+  background: var(--highlight-color);
 }
 
 .hero-description {
@@ -185,26 +190,25 @@ body {
 .cta-button {
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
-  background: #076a7c;
+  background: var(--cta-bg-color);
   color: white;
-  border: 3px solid #000;
-  border-radius: 0;
+  border: 3px solid var(--cta-border-color);
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 8px 8px 0 #000;
+  box-shadow: 8px 8px 0 var(--cta-border-color);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .cta-button:hover {
-  transform: translate(-4px, -4px);
-  box-shadow: 12px 12px 0 #000;
+  transform: var(--cta-hover-transform);
+  box-shadow: var(--cta-hover-shadow);
 }
 
 .cta-button:active {
-  transform: translate(0, 0);
-  box-shadow: 4px 4px 0 #000;
+  transform: var(--cta-active-transform);
+  box-shadow: var(--cta-active-shadow);
 }
 
 /* Skills Section */
@@ -229,7 +233,6 @@ body {
       25px 25px / 50px 50px,
     linear-gradient(#9b59b6 1px, transparent 1px) 0px -0.5px / 25px 25px,
     linear-gradient(90deg, #9b59b6 1px, #8e44ad 1px) -0.5px 0px / 25px 25px #8e44ad;
-  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 .skills-grid {
@@ -317,7 +320,6 @@ body {
       25px 25px / 50px 50px,
     linear-gradient(#c0392b 1px, transparent 1px) 0px -0.5px / 25px 25px,
     linear-gradient(90deg, #c0392b 1px, #e74c3c 1px) -0.5px 0px / 25px 25px #e74c3c;
-  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 .projects-grid {
@@ -633,7 +635,6 @@ body {
       25px 25px / 50px 50px,
     linear-gradient(#1abc9c 1px, transparent 1px) 0px -0.5px / 25px 25px,
     linear-gradient(90deg, #1abc9c 1px, #16a085 1px) -0.5px 0px / 25px 25px #16a085;
-  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 .about-content {
