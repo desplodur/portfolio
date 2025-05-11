@@ -5,7 +5,7 @@ import AboutSection from "./sections/AboutSection";
 import ContactSection from "./sections/ContactSection";
 import HeroSection from "./sections/HeroSection";
 import ProjectsSection from "./sections/ProjectsSection";
-import SectionIndicator from "./sections/SectionIndicator";
+import SectionIndicator from "./components/SectionIndicator";
 import SkillsSection from "./sections/SkillsSection";
 
 const sections = ["hero", "about", "skills", "projects", "contact"];
