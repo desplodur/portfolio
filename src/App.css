@@ -64,38 +64,6 @@ body {
   overflow: hidden;
 }
 
-.section::before,
-.section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  z-index: 0;
-}
-
-.section::after {
-  top: 50%;
-  left: 50%;
-  width: 150%;
-  height: 150%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  opacity: 0.1;
-}
-
-.section-content {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 2rem;
-}
-
 .section-heading {
   position: absolute;
   top: 2rem;
@@ -238,15 +206,16 @@ body {
 }
 
 .skills-grid {
-  grid-column: 2 / span 10;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: flex;
+  gap: 5rem;
   position: relative;
 }
 
 .skill-card {
-  background: #9b59b6;
+  background: #fff;
+  height: 60vh;
+  width: 25vw;
+  color: #000;
   padding: 2.5rem;
   transform: rotate(var(--rotation));
   transition: all 0.3s ease;
