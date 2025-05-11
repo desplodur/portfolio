@@ -7,6 +7,7 @@ import HeroSection from "./sections/HeroSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import SectionIndicator from "./components/SectionIndicator";
 import SkillsSection from "./sections/SkillsSection";
+import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
 
 const sections = ["hero", "about", "skills", "projects", "contact"];
 
@@ -44,6 +45,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <LanguageSwitcher />
         <Routes>
           <Route
             path="/"
