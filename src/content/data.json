@@ -1,0 +1,34 @@
+{
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": ["React", "TypeScript", "HTML/CSS", "JavaScript"]
+    },
+    {
+      "category": "Backend",
+      "items": ["Node.js", "Python", "SQL", "REST APIs"]
+    },
+    {
+      "category": "Tools",
+      "items": ["Git", "Docker", "AWS", "CI/CD"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Project 1",
+      "description": "Description of your project and technologies used.",
+      "links": {
+        "live": "#",
+        "source": "#"
+      }
+    },
+    {
+      "title": "Project 2",
+      "description": "Description of your project and technologies used.",
+      "links": {
+        "live": "#",
+        "source": "#"
+      }
+    }
+  ]
+}
