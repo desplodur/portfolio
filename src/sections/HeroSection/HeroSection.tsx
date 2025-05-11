@@ -1,18 +1,20 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const HeroSection: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="hero" className="section">
-      <h2 className="section-heading">Hero</h2>
+      <h2 className="section-heading">{t("hero.title")}</h2>
       <div className="hero-content">
         <h1>
-          Hi, I'm <span className="highlight">Your Name</span>
+          {t("hero.greeting")}{" "}
+          <span className="highlight">{t("hero.name")}</span>
         </h1>
-        <h2>Full Stack Developer</h2>
-        <p className="hero-description">
-          I build exceptional digital experiences with modern technologies.
-        </p>
-        <button className="cta-button">View My Work</button>
+        <h2>{t("hero.role")}</h2>
+        <p className="hero-description">{t("hero.description")}</p>
+        <button className="cta-button">{t("hero.cta")}</button>
       </div>
     </section>
   );

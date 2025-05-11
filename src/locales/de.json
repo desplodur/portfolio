@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title": "Willkommen in meinem Portfolio",
+    "description": "Entdecken Sie meine Arbeit und Fähigkeiten.",
+    "greeting": "Hallo, ich bin",
+    "name": "Ihr Name",
+    "role": "Ein Webentwickler",
+    "cta": "Kontakt aufnehmen"
+  },
+  "about": {
+    "title": "Über mich",
+    "content": "Hier können Sie mehr über mich erfahren.",
+    "description": "Ich bin ein leidenschaftlicher Entwickler mit Erfahrung im Erstellen von Webanwendungen."
+  },
+  "skills": {
+    "Frontend": ["React", "TypeScript", "HTML/CSS", "JavaScript"],
+    "Backend": ["Node.js", "Python", "SQL", "REST APIs"],
+    "Tools": ["Git", "Docker", "AWS", "CI/CD"],
+    "title": "Meine Fähigkeiten",
+    "categories": {
+      "Frontend": "Frontend-Entwicklung",
+      "Backend": "Backend-Entwicklung",
+      "Tools": "Entwicklungstools"
+    }
+  },
+  "projects": {
+    "liveDemo": "Live-Demo",
+    "sourceCode": "Quellcode",
+    "titles": {
+      "Project 1": "Projekt 1",
+      "Project 2": "Projekt 2"
+    },
+    "descriptions": {
+      "Project 1": "Beschreibung Ihres Projekts und der verwendeten Technologien.",
+      "Project 2": "Beschreibung Ihres Projekts und der verwendeten Technologien."
+    },
+    "title": "Meine Projekte"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie mich",
+    "description": "Kontaktieren Sie mich gerne per E-Mail oder über soziale Medien."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title": "Welcome to My Portfolio",
+    "description": "Explore my work and skills.",
+    "greeting": "Hello, I am",
+    "name": "Your Name",
+    "role": "A Web Developer",
+    "cta": "Get in Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "content": "This is where you can learn more about me.",
+    "description": "I am a passionate developer with experience in building web applications."
+  },
+  "skills": {
+    "Frontend": ["React", "TypeScript", "HTML/CSS", "JavaScript"],
+    "Backend": ["Node.js", "Python", "SQL", "REST APIs"],
+    "Tools": ["Git", "Docker", "AWS", "CI/CD"],
+    "title": "My Skills",
+    "categories": {
+      "Frontend": "Frontend Development",
+      "Backend": "Backend Development",
+      "Tools": "Development Tools"
+    }
+  },
+  "projects": {
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source Code",
+    "titles": {
+      "Project 1": "Project 1",
+      "Project 2": "Project 2"
+    },
+    "descriptions": {
+      "Project 1": "Description of your project and technologies used.",
+      "Project 2": "Description of your project and technologies used."
+    },
+    "title": "My Projects"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Feel free to reach out via email or social media."
+  }
+}

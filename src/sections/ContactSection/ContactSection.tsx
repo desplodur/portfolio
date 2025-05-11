@@ -1,11 +1,14 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const ContactSection: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="section">
-      <h2 className="section-heading">Contact</h2>
+      <h2 className="section-heading">{t("contact.title")}</h2>
       <div className="contact-content">
-        <p>I'm always open to new opportunities and collaborations.</p>
+        <p>{t("contact.description")}</p>
         <div className="contact-links">
           <a href="mailto:your.email@example.com" className="contact-link">
             Email
