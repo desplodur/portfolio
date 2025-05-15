@@ -1,5 +1,3 @@
-@import "./styles/variables.scss";
-
 * {
   margin: 0;
   padding: 0;
@@ -45,24 +43,9 @@ body {
   overflow: hidden;
 }
 
-.section-heading {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--section-heading-color);
-  z-index: 2;
-  text-shadow: var(--section-heading-shadow);
-  padding: 1rem;
-  background: var(--section-heading-bg);
-}
-
 .section-indicator {
   position: fixed;
-  right: 2rem;
+  right: 0.5rem;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
