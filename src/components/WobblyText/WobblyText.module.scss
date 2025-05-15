@@ -1,0 +1,22 @@
+.tiltL {
+  display: inline-block;
+  transform: rotate(-2deg);
+}
+.tiltR {
+  display: inline-block;
+  transform: rotate(2deg);
+}
+.tiltL2 {
+  display: inline-block;
+  transform: rotate(-5deg);
+}
+.tiltR2 {
+  transform: rotate(5deg);
+}
+
+.wobblyText {
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  letter-spacing: 0.05rem;
+}
