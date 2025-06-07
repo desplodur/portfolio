@@ -12,7 +12,7 @@ const UnderLineText: React.FC<UnderLineTextProps> = ({
 }) => {
   return (
     <span className={`${styles.underLineText} ${className || ""}`}>
-      <span>{children}</span>
+      {children}
     </span>
   );
 };

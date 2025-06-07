@@ -27,5 +27,18 @@ export const messages = {
     id: "hero.cta",
     defaultMessage: "Contact me",
   },
+  "about.title": {
+    id: "about.title",
+    defaultMessage: "About Me",
+  },
+  "about.name": {
+    id: "about.name",
+    defaultMessage: "Laurenz Rudolph",
+  },
+  "about.description": {
+    id: "about.description",
+    defaultMessage:
+      "I'm a passionate developer focused on building performant, maintainable, and beautiful digital products. I love learning new things and collaborating with others.",
+  },
   // Add more keys as needed for other sections (about, skills, projects, contact, etc.)
 };

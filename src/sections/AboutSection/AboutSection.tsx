@@ -1,14 +1,22 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import styles from "./AboutSection.module.scss";
+import UnderLineText from "../../components/UnderLineText";
 
 const AboutSection: React.FC = () => {
   const { t } = useTranslation();
 
   return (
     <section id="about" className="section">
-      <h2 className="section-heading">{t("about.title")}</h2>
-      <div className="about-content">
-        <p>{t("about.description")}</p>
+      <div className={styles.aboutSection + " " + styles.invertedRadius}>
+        <div className={styles.aboutContent}>
+          <h2 className={styles.nameTitle}>
+            <UnderLineText>{t("about.title")}</UnderLineText>
+          </h2>
+          <div className={styles.aboutDescription}>
+            <p>{t("about.description")}</p>
+          </div>
+        </div>
       </div>
     </section>
   );
