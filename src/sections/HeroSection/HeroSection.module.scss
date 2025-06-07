@@ -1,8 +1,17 @@
+@import "../../styles/sectionBase";
+
+.heroSection {
+  @extend .sectionBase;
+  --section-bg: #1e90ff;
+}
+
 .TypewriterText {
   --bgColor: #3fb8af;
 }
 
 .heroSection {
+  @extend .sectionBase;
+  --section-bg: #1e90ff;
   color: black;
   width: 85vw;
   height: 90vh;
