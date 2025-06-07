@@ -27,7 +27,9 @@ const HeroSection: React.FC = () => {
           />
 
           <div className={styles.heroDescription}>
-            <TypewriterText>{t("hero.role")} </TypewriterText>
+            <TypewriterText className={styles.TypewriterText}>
+              {t("hero.role")}
+            </TypewriterText>
           </div>
 
           <div className={styles.socialLinks}>
@@ -51,7 +53,12 @@ const HeroSection: React.FC = () => {
             />
           </div>
         </div>
-        <button className={styles.getInTouchButton}>{t("hero.cta")}</button>
+        <button
+          onClick={() => (window.location.href = "#contact")}
+          className={styles.getInTouchButton}
+        >
+          {t("hero.cta")}
+        </button>
       </div>
     );
   };

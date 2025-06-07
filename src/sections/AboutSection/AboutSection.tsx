@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./AboutSection.module.scss";
 import UnderLineText from "../../components/UnderLineText";
+import TypewriterText from "../../components/TypewriterText";
 
 const AboutSection: React.FC = () => {
   const { t } = useTranslation();
@@ -14,7 +15,9 @@ const AboutSection: React.FC = () => {
             <UnderLineText>{t("about.title")}</UnderLineText>
           </h2>
           <div className={styles.aboutDescription}>
-            <p>{t("about.description")}</p>
+            <TypewriterText className={styles.TypewriterText}>
+              {t("about.description")}
+            </TypewriterText>
           </div>
         </div>
       </div>

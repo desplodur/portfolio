@@ -35,7 +35,7 @@
 }
 
 .typewriter {
-  --bgColor: #3fb8af;
+  // --bgColor: needs to be set by the parent component;
   --lines: 500;
   --lineHeight: 1.5rem;
   --timePerLine: 0.4s;
