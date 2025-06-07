@@ -2,12 +2,12 @@ import React from "react";
 import styles from "./TypewriterText.module.scss";
 
 interface TypewriterTextT {
-  text: string;
+  children: React.ReactNode;
   ariaLabel?: string;
   className?: string;
 }
 const TypewriterText: React.FC<TypewriterTextT> = ({
-  text,
+  children,
   ariaLabel,
   className,
 }) => {
@@ -16,7 +16,7 @@ const TypewriterText: React.FC<TypewriterTextT> = ({
       className={className + " " + styles.typewriter}
       aria-label={ariaLabel}
     >
-      {text}
+      {children}
     </section>
   );
 };
