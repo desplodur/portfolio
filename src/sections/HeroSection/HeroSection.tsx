@@ -16,10 +16,10 @@ const HeroSection: React.FC = () => {
         className={styles.heroSection + " " + styles.invertedRadius}
         style={{ position: "relative", overflow: "hidden" }}
       >
+        <h1 className={styles.nameTitle}>
+          {t("hero.greeting")} <UnderLineText>{t("hero.name")}</UnderLineText>
+        </h1>
         <div className={styles.heroContent}>
-          <h1 className={styles.nameTitle}>
-            {t("hero.greeting")} <UnderLineText>{t("hero.name")}</UnderLineText>
-          </h1>
           <img
             className={styles.heroPicture}
             src={hamburgTriathlonImg}

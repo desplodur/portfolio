@@ -9,10 +9,10 @@ const ContactSection: React.FC = () => {
   return (
     <section id="contact" className="section">
       <div className={styles.contactSection}>
+        <h2 className={styles.nameTitle}>
+          <UnderLineText>{t("contact.title")}</UnderLineText>
+        </h2>
         <div className={styles.contactContent}>
-          <h2 className={styles.nameTitle}>
-            <UnderLineText>{t("contact.title")}</UnderLineText>
-          </h2>
           <div className={styles.contactDescription}>
             <p>{t("contact.description")}</p>
             <div className={styles.contactLinks}>

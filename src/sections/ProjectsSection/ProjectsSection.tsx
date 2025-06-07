@@ -10,10 +10,10 @@ const ProjectsSection: React.FC = () => {
   return (
     <section id="projects" className="section">
       <div className={styles.projectsSection}>
+        <h2 className={styles.nameTitle}>
+          <UnderLineText>{t("projects.title")}</UnderLineText>
+        </h2>
         <div className={styles.projectsContent}>
-          <h2 className={styles.nameTitle}>
-            <UnderLineText>{t("projects.title")}</UnderLineText>
-          </h2>
           <div className={styles.projectsGrid}>
             {projectsData.projects.map((project) => (
               <div className={styles.projectCard} key={project.title}>

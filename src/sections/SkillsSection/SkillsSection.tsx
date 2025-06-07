@@ -10,10 +10,10 @@ const SkillsSection: React.FC = () => {
   return (
     <section id="skills" className="section">
       <div className={styles.skillsSection}>
+        <h2 className={styles.nameTitle}>
+          <UnderLineText>{t("skills.title")}</UnderLineText>
+        </h2>
         <div className={styles.skillsContent}>
-          <h2 className={styles.nameTitle}>
-            <UnderLineText>{t("skills.title")}</UnderLineText>
-          </h2>
           <div className={styles.skillsGrid}>
             {skillsData.skills.map((skillCategory) => (
               <div className={styles.skillCard} key={skillCategory.category}>

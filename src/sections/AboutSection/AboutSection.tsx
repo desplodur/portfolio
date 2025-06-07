@@ -10,10 +10,10 @@ const AboutSection: React.FC = () => {
   return (
     <section id="about" className="section">
       <div className={styles.aboutSection + " " + styles.invertedRadius}>
+        <h2 className={styles.nameTitle}>
+          <UnderLineText>{t("about.title")}</UnderLineText>
+        </h2>
         <div className={styles.aboutContent}>
-          <h2 className={styles.nameTitle}>
-            <UnderLineText>{t("about.title")}</UnderLineText>
-          </h2>
           <div className={styles.aboutDescription}>
             <TypewriterText className={styles.TypewriterText}>
               {t("about.description")}
