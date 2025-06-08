@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import data from "../../content/data.json";
 import styles from "./WorkSection.module.scss";
 import UnderLineText from "../../components/UnderLineText";
+import Carousel from "../../components/Carousel/Carousel";
 
 const WorkSection: React.FC = () => {
   const { t } = useTranslation();
@@ -14,8 +15,8 @@ const WorkSection: React.FC = () => {
           <UnderLineText>{t("work.title")}</UnderLineText>
         </h2>
         <div className={styles.workContent}>
-          <div className={styles.workGrid}>
-            {data.work.map((project) => (
+          <Carousel
+            slides={data.work.map((project) => (
               <div className={styles.workCard} key={project.title}>
                 <h3>{t(`work.titles.${project.title}`)}</h3>
                 <p>{t(`work.descriptions.${project.title}`)}</p>
@@ -29,7 +30,7 @@ const WorkSection: React.FC = () => {
                 </div>
               </div>
             ))}
-          </div>
+          />
         </div>
       </div>
     </section>
