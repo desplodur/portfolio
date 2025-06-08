@@ -27,9 +27,10 @@ const HeroSection: React.FC = () => {
           />
 
           <div className={styles.heroDescription}>
-            <TypewriterText className={styles.TypewriterText}>
-              {t("hero.role")}
-            </TypewriterText>
+            <TypewriterText
+              className={styles.TypewriterText}
+              text={t("hero.role")}
+            />
           </div>
 
           <div className={styles.socialLinks}>

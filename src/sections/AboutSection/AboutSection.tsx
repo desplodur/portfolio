@@ -15,9 +15,10 @@ const AboutSection: React.FC = () => {
         </h2>
         <div className={styles.aboutContent}>
           <div className={styles.aboutDescription}>
-            <TypewriterText className={styles.TypewriterText}>
-              {t("about.description")}
-            </TypewriterText>
+            <TypewriterText
+              className={styles.TypewriterText}
+              text={t("about.description")}
+            />
           </div>
         </div>
       </div>
