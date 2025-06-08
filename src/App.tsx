@@ -6,10 +6,9 @@ import ContactSection from "./sections/ContactSection";
 import HeroSection from "./sections/HeroSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import SectionIndicator from "./components/SectionIndicator";
-import SkillsSection from "./sections/SkillsSection";
 import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
 
-const sections = ["hero", "skills", "projects", "about", "contact"];
+const sections = ["hero", "projects", "about", "contact"];
 
 function App() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -56,7 +55,6 @@ function App() {
                   activeSection={activeSection}
                 />
                 <HeroSection />
-                <SkillsSection />
                 <ProjectsSection />
                 <AboutSection />
                 <ContactSection />
