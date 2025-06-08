@@ -36,7 +36,7 @@ const TypewriterText: React.FC<TypewriterTextT> = ({
       setDisplayedText("");
       let i = 0;
       const interval = setInterval(() => {
-        setDisplayedText((prev) => prev + text[i]);
+        setDisplayedText((prev) => prev + (text[i] ?? ""));
         i++;
         if (i >= text.length) {
           clearInterval(interval);
@@ -45,7 +45,6 @@ const TypewriterText: React.FC<TypewriterTextT> = ({
       return () => clearInterval(interval);
     }
   }, [isVisible, text]);
-
   return (
     <section
       ref={sectionRef}
