@@ -29,6 +29,30 @@
         "live": "#",
         "source": "#"
       }
+    },
+    {
+      "title": "Project 3",
+      "description": "A web application built with React and TypeScript, featuring real-time data visualization.",
+      "links": {
+        "live": "https://project3.example.com",
+        "source": "https://github.com/username/project3"
+      }
+    },
+    {
+      "title": "Project 4",
+      "description": "Backend API developed using Node.js and Express, integrated with a PostgreSQL database.",
+      "links": {
+        "live": "https://project4.example.com",
+        "source": "https://github.com/username/project4"
+      }
+    },
+    {
+      "title": "Project 5",
+      "description": "DevOps pipeline setup using Docker and AWS for continuous integration and deployment.",
+      "links": {
+        "live": "https://project5.example.com",
+        "source": "https://github.com/username/project5"
+      }
     }
   ]
 }

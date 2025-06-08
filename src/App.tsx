@@ -8,7 +8,7 @@ import WorkSection from "./sections/WorkSection";
 import SectionIndicator from "./components/SectionIndicator";
 import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
 
-const sections = ["hero", "projects", "about", "contact"];
+const sections = ["hero", "work", "about", "contact"];
 
 function App() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -23,11 +23,10 @@ function App() {
         });
       },
       {
-        threshold: 0.5, // Trigger when 50% of the section is visible
+        threshold: 0.5,
       }
     );
 
-    // Observe all sections
     sections.forEach((section) => {
       const element = document.getElementById(section);
       if (element) observer.observe(element);

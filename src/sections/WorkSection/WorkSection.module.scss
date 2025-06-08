@@ -15,7 +15,7 @@
 }
 
 .nameTitle {
-  font-size: 1.5rem; // Decreased heading size for small screens
+  font-size: 1.5rem;
 }
 
 @media (min-width: 800px) {
@@ -33,4 +33,133 @@
   .workGrid {
     width: 30vw;
   }
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carouselContainer {
+  display: flex;
+}
+
+.carouselSlide {
+  flex: 0 0 100%;
+  min-width: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.carouselDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.6rem;
+}
+
+.carouselDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #666666;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.carouselDot:hover {
+  background: #181818;
+  transform: scale(1.2);
+}
+
+.carouselDotSelected {
+  background: #fff;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #fff;
+}
+
+.carouselDot:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.carouselControls {
+  height: 3rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.carouselButtons {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+@media (max-width: 799px) {
+  .carouselButtons {
+    display: none;
+  }
+}
+
+.carouselButton {
+  appearance: none;
+  background: #242424;
+  color: #fff;
+  border: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.carouselButton:hover {
+  background: #181818;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.carouselButton:active,
+.carouselButtonSelected {
+  background: #fff;
+  color: #222;
+  box-shadow: 0 0 10px #fff;
+  transform: scale(1.1);
+}
+
+.carouselButton:disabled {
+  background: rgba(255, 255, 255, 0.15);
+  color: #bbb;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.carouselButton:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.carouselButtonSvg {
+  width: 35%;
+  height: 35%;
+  display: block;
+  fill: currentColor;
 }
