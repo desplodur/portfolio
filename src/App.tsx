@@ -28,16 +28,20 @@ function App() {
       }
     );
 
+    const elements: HTMLElement[] = [];
     sections.forEach((section) => {
       const element = document.getElementById(section);
-      if (element) observer.observe(element);
+      if (element) {
+        observer.observe(element);
+        elements.push(element);
+      }
     });
 
     return () => {
-      sections.forEach((section) => {
-        const element = document.getElementById(section);
-        if (element) observer.unobserve(element);
+      elements.forEach((element) => {
+        observer.unobserve(element);
       });
+      observer.disconnect();
     };
   }, []);
 
