@@ -1,4 +1,4 @@
-@import "../../styles/sectionBase";
+@use "../../styles/sectionBase";
 
 .heroSection {
   @extend .sectionBase;
@@ -47,7 +47,8 @@
 }
 
 .heroContent {
-  height: 85%;
+  padding-top: 2rem;
+  height: 80%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -97,33 +98,31 @@
     width: 25vw;
     height: 25vw;
     border-radius: 100%;
+    padding: 1.5rem;
     justify-self: center;
   }
   .heroContent {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3fr 1fr;
   }
 
   .nameTitle {
-    grid-area: 1 / 1 / 2 / 3;
     font-size: 3.5vw;
   }
   .heroPicture {
-    grid-area: 1 / 3 / 3 / 5;
+    grid-area: 1 / 2 / 2 / 3;
   }
   .heroDescription {
-    grid-area: 2 / 1 / 4 / 3;
-    align-self: baseline;
+    grid-area: 1 / 1 / 2 / 2;
     width: 30vw;
   }
   .socialLinks {
-    grid-area: 3 / 1 /4 / 5;
-    width: fit-content;
-    justify-self: center;
+    grid-area: 2 / 1 /3 / 3;
   }
   .getInTouchButton {
-    grid-area: 4 / 3 / 5 / 5;
     height: 3rem;
   }
 }
