@@ -4,7 +4,7 @@ import "./styles/App.scss";
 import AboutSection from "./sections/AboutSection";
 import ContactSection from "./sections/ContactSection";
 import HeroSection from "./sections/HeroSection";
-import ProjectsSection from "./sections/ProjectsSection";
+import WorkSection from "./sections/WorkSection";
 import SectionIndicator from "./components/SectionIndicator";
 import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
 
@@ -55,7 +55,7 @@ function App() {
                   activeSection={activeSection}
                 />
                 <HeroSection />
-                <ProjectsSection />
+                <WorkSection />
                 <AboutSection />
                 <ContactSection />
               </>
