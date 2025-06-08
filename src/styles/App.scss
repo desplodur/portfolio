@@ -33,7 +33,7 @@ body {
 }
 
 .app::after {
-  content: '';
+  content: "";
   position: fixed;
   left: var(--cursor-x, 50vw);
   top: var(--cursor-y, 50vh);
