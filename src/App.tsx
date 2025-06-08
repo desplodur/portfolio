@@ -40,6 +40,18 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const moveDot = (e: MouseEvent) => {
+      const app = document.querySelector('.app');
+      if (app) {
+        (app as HTMLElement).style.setProperty('--cursor-x', `${e.clientX}px`);
+        (app as HTMLElement).style.setProperty('--cursor-y', `${e.clientY}px`);
+      }
+    };
+    window.addEventListener('mousemove', moveDot);
+    return () => window.removeEventListener('mousemove', moveDot);
+  }, []);
+
   return (
     <Router>
       <div className="app">

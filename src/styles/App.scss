@@ -29,6 +29,23 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  cursor: none;
+}
+
+.app::after {
+  content: '';
+  position: fixed;
+  left: var(--cursor-x, 50vw);
+  top: var(--cursor-y, 50vh);
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  display: block;
 }
 
 .section {
@@ -79,4 +96,9 @@ body {
   background: white;
   transform: scale(1.2);
   box-shadow: 0 0 10px white;
+}
+
+body {
+  /* Ensure the body takes full height for cursor tracking */
+  min-height: 100vh;
 }
