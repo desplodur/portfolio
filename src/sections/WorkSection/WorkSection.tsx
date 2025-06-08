@@ -4,6 +4,7 @@ import data from "../../content/data.json";
 import styles from "./WorkSection.module.scss";
 import UnderLineText from "../../components/UnderLineText";
 import useEmblaCarousel from "embla-carousel-react";
+import { playClickSound } from "../../utils/clickSound";
 
 const WorkSection: React.FC = () => {
   const { t } = useTranslation();
@@ -40,11 +41,13 @@ const WorkSection: React.FC = () => {
   );
 
   const scrollPrev = useCallback(() => {
+    playClickSound();
     if (!emblaApi) return;
     emblaApi.scrollPrev();
   }, [emblaApi]);
 
   const scrollNext = useCallback(() => {
+    playClickSound();
     if (!emblaApi) return;
     emblaApi.scrollNext();
   }, [emblaApi]);
@@ -120,7 +123,10 @@ const WorkSection: React.FC = () => {
                   <button
                     key={idx}
                     type="button"
-                    onClick={() => scrollTo(idx)}
+                    onClick={() => {
+                      playClickSound();
+                      scrollTo(idx);
+                    }}
                     className={
                       styles.carouselDot +
                       (idx === selectedIndex

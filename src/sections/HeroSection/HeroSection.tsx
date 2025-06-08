@@ -6,6 +6,7 @@ import hamburgTriathlonImg from "../../content/hero-picture.jpg";
 import UnderLineText from "../../components/UnderLineText";
 import TypewriterText from "../../components/TypewriterText";
 import { SocialIcon } from "react-social-icons";
+import { playClickSound } from "../../utils/clickSound";
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();
@@ -55,7 +56,10 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
         <button
-          onClick={() => (window.location.href = "#contact")}
+          onClick={() => {
+            playClickSound();
+            window.location.href = "#contact";
+          }}
           className={styles.getInTouchButton}
         >
           {t("hero.cta")}
