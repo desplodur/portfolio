@@ -15,44 +15,92 @@
   ],
   "work": [
     {
-      "title": "Project 1",
-      "description": "Description of your project and technologies used.",
-      "links": {
-        "live": "#",
-        "source": "#"
-      }
+      "title": "BCM Solutions GmbH",
+      "period": "09/2022 - 12/2022",
+      "description": "Created a comprehensive design library to unify UI/UX across multiple projects. Led the design system architecture in Figma, ensuring consistency and scalability. Developed reusable, accessible UI components in TypeScript and React. Integrated Storybook for interactive documentation and team collaboration. Established best practices for component development and documentation.",
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Figma",
+        "Storybook",
+        "UI/UX",
+        "SCSS",
+        "Jest"
+      ],
+      "links": { "live": "#", "source": "#" }
     },
     {
-      "title": "Project 2",
-      "description": "Description of your project and technologies used.",
-      "links": {
-        "live": "#",
-        "source": "#"
-      }
+      "title": "neueFische GmbH",
+      "period": "06/2022 – 08/2022",
+      "description": "Developed a web application for asking and answering questions. Designed UI/UX with Figma and implemented with React and Styled Components. Built backend and database using Node.js and MongoDB. Implemented real-time updates using optimistic updates. Agile development with Scrum.",
+      "technologies": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "UI/UX",
+        "Figma",
+        "HTML",
+        "CSS",
+        "Storybook",
+        "React Testing Library",
+        "MongoDB",
+        "Mongoose",
+        "Styled Components",
+        "React Query",
+        "Pforte",
+        "VSC"
+      ],
+      "links": { "live": "#", "source": "#" }
     },
     {
-      "title": "Project 3",
-      "description": "A web application built with React and TypeScript, featuring real-time data visualization.",
-      "links": {
-        "live": "https://project3.example.com",
-        "source": "https://github.com/username/project3"
-      }
+      "title": "neueFische GmbH",
+      "period": "04/2022 – 05/2022",
+      "description": "Designed concept for a To-Do web application. Created UI/UX designs with Figma. Implemented UI/UX with React and Styled Components. Frontend development using JavaScript, CSS, HTML. Documented the web application.",
+      "technologies": [
+        "JavaScript",
+        "React",
+        "UI/UX",
+        "Figma",
+        "HTML",
+        "CSS",
+        "VSC"
+      ],
+      "links": { "live": "#", "source": "#" }
     },
     {
-      "title": "Project 4",
-      "description": "Backend API developed using Node.js and Express, integrated with a PostgreSQL database.",
-      "links": {
-        "live": "https://project4.example.com",
-        "source": "https://github.com/username/project4"
-      }
+      "title": "neueFische GmbH",
+      "period": "03/2022 – 04/2022",
+      "description": "Developed a social media clone. Implemented UI/UX using HTML, CSS, and JavaScript. Organized programming tasks. Coordinated Scrum team members. Version control with GitHub.",
+      "technologies": ["JavaScript", "UI/UX", "HTML", "CSS", "VSC"],
+      "links": { "live": "#", "source": "#" }
     },
     {
-      "title": "Project 5",
-      "description": "DevOps pipeline setup using Docker and AWS for continuous integration and deployment.",
-      "links": {
-        "live": "https://project5.example.com",
-        "source": "https://github.com/username/project5"
-      }
+      "title": "E-Commerce sector",
+      "period": "06/2019 – 09/2022",
+      "description": "Designed an online shop concept. Created UI/UX with Figma. Implemented UI/UX with WordPress. Planned and executed website modifications with JavaScript, CSS, and HTML. Managed website file structure on IONOS.",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "UI/UX",
+        "Figma",
+        "WordPress"
+      ],
+      "links": { "live": "#", "source": "#" }
+    },
+    {
+      "title": "Exertis Pro AV GmbH",
+      "period": "07/2019 – 09/2019",
+      "description": "Developed a project reporting tool for conference room systems. Designed application structure. Planned code integration into the existing website structure. Developed the web application using JavaScript, HTML, and CSS. Used GitHub for version control.",
+      "technologies": ["JavaScript", "HTML", "CSS", "VSC"],
+      "links": { "live": "#", "source": "#" }
+    },
+    {
+      "title": "Johann-Philipp-Palm-Schule",
+      "period": "08/2017 – 10/2017",
+      "description": "Developed a club website as a graduation project. Implemented frontend with HTML5, CSS3, and PHP. Documented the web application. Presented the final project.",
+      "technologies": ["HTML", "CSS", "UI/UX", "PHP", "VSC"],
+      "links": { "live": "#", "source": "#" }
     }
   ]
 }
