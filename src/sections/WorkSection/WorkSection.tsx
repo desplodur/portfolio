@@ -41,13 +41,11 @@ const WorkSection: React.FC = () => {
   );
 
   const scrollPrev = useCallback(() => {
-    playClickSound();
     if (!emblaApi) return;
     emblaApi.scrollPrev();
   }, [emblaApi]);
 
   const scrollNext = useCallback(() => {
-    playClickSound();
     if (!emblaApi) return;
     emblaApi.scrollNext();
   }, [emblaApi]);
@@ -99,7 +97,10 @@ const WorkSection: React.FC = () => {
               <div className={styles.carouselButtons}>
                 <button
                   className={styles.carouselButton}
-                  onClick={scrollPrev}
+                  onClick={() => {
+                    playClickSound();
+                    scrollPrev();
+                  }}
                   disabled={prevBtnDisabled}
                   aria-label="Previous slide"
                 >
@@ -109,7 +110,10 @@ const WorkSection: React.FC = () => {
                 </button>
                 <button
                   className={styles.carouselButton}
-                  onClick={scrollNext}
+                  onClick={() => {
+                    playClickSound();
+                    scrollNext();
+                  }}
                   disabled={nextBtnDisabled}
                   aria-label="Next slide"
                 >

@@ -7,7 +7,6 @@ import HeroSection from "./sections/HeroSection";
 import WorkSection from "./sections/WorkSection";
 import SectionIndicator from "./components/SectionIndicator";
 import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
-import { playClickSound } from "./utils/clickSound";
 
 const sections = ["hero", "work", "about", "contact"];
 
@@ -55,16 +54,6 @@ function App() {
     };
     window.addEventListener("mousemove", moveDot);
     return () => window.removeEventListener("mousemove", moveDot);
-  }, []);
-
-  useEffect(() => {
-    const handleArrowKey = (e: KeyboardEvent) => {
-      if (e.key === "ArrowUp" || e.key === "ArrowDown") {
-        playClickSound();
-      }
-    };
-    window.addEventListener("keydown", handleArrowKey);
-    return () => window.removeEventListener("keydown", handleArrowKey);
   }, []);
 
   return (
