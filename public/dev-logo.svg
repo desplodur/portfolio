@@ -1,7 +1,7 @@
-<!-- Smaller smile emoji made out of bold development brackets -->
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="32" height="32" rx="6" fill="#22223B"/>
-  <text x="4" y="16" font-family="'Fira Mono', 'Consolas', 'Menlo', monospace" font-size="13" font-weight="900" fill="#F2E9E4">{</text>
-  <text x="22" y="16" font-family="'Fira Mono', 'Consolas', 'Menlo', monospace" font-size="13" font-weight="900" fill="#F2E9E4">}</text>
-  <path d="M10 22 Q16 28 22 22" stroke="#F2E9E4" stroke-width="1.5" fill="none"/>
+<!-- Updated DEV logo icon -->
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="12" fill="#0D1117"/>
+  <path d="M20 24L12 32L20 40" stroke="#58A6FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M44 24L52 32L44 40" stroke="#58A6FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 20L28 44" stroke="#C778DD" stroke-width="3" stroke-linecap="round"/>
 </svg>
