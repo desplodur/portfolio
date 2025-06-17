@@ -1,22 +1,24 @@
 {
-  "skills": [
-    {
-      "category": "Frontend",
-      "items": ["React", "TypeScript", "HTML/CSS", "JavaScript"]
-    },
-    {
-      "category": "Backend",
-      "items": ["Node.js", "Python", "SQL", "REST APIs"]
-    },
-    {
-      "category": "Tools",
-      "items": ["Git", "Docker", "AWS", "CI/CD"]
-    }
-  ],
   "work": [
     {
+      "title": "Kistler Instrumente GmbH",
+      "period": "08/2022 - Present",
+      "description": "Developed and improved a high quality desktop application to control electronic motor test stands. Assured high performance and reliability for the data visualisation and processing to handle large data sets. Implemented new features and fixed complex bugs in the codebase. Collaborated with cross-functional teams in an agile environment. Wrote unit tests to ensure code quality and maintainability.",
+      "technologies": [
+        "TypeScript",
+        "Electron",
+        "React",
+        "Node.js",
+        "Redux",
+        "Jest",
+        "SCSS",
+        "react-intl"
+      ],
+      "links": { "live": "#", "source": "#" }
+    },
+    {
       "title": "BCM Solutions GmbH",
-      "period": "09/2022 - 12/2022",
+      "period": "09/2022 - 07/2023",
       "description": "Created a comprehensive design library to unify UI/UX across multiple projects. Led the design system architecture in Figma, ensuring consistency and scalability. Developed reusable, accessible UI components in TypeScript and React. Integrated Storybook for interactive documentation and team collaboration. Established best practices for component development and documentation.",
       "technologies": [
         "TypeScript",
@@ -77,14 +79,15 @@
     {
       "title": "E-Commerce sector",
       "period": "06/2019 – 09/2022",
-      "description": "Designed an online shop concept. Created UI/UX with Figma. Implemented UI/UX with WordPress. Planned and executed website modifications with JavaScript, CSS, and HTML. Managed website file structure on IONOS.",
+      "description": "Designed a online shop concept. Created UI/UX with Figma. Implemented UI/UX with WordPress. Planned and executed website modifications with JavaScript, CSS, and HTML. Managed website file structure on IONOS.",
       "technologies": [
         "JavaScript",
         "HTML",
         "CSS",
         "UI/UX",
         "Figma",
-        "WordPress"
+        "WordPress",
+        "WooCommerce"
       ],
       "links": { "live": "#", "source": "#" }
     },
