@@ -5,7 +5,6 @@ import styles from "./HeroSection.module.scss";
 import hamburgTriathlonImg from "../../content/hero-picture.jpg";
 import UnderLineText from "../../components/UnderLineText";
 import TypewriterText from "../../components/TypewriterText";
-import { SocialIcon } from "react-social-icons";
 import { playClickSound } from "../../utils/clickSound";
 
 const HeroSection: React.FC = () => {
@@ -31,27 +30,6 @@ const HeroSection: React.FC = () => {
             <TypewriterText
               className={styles.TypewriterText}
               text={t("hero.role")}
-            />
-          </div>
-
-          <div className={styles.socialLinks}>
-            <SocialIcon
-              url="https://www.linkedin.com/in/laurenz-rudolph-0130961b5/"
-              label="LinkedIn"
-              fgColor="#fff"
-              style={{ height: 35, width: 35 }}
-            />
-            <SocialIcon
-              url="https://github.com/desplodur"
-              label="GitHub"
-              fgColor="#fff"
-              style={{ height: 35, width: 35 }}
-            />
-            <SocialIcon
-              url="https://instagram.com/desplodur"
-              label="GitHub"
-              fgColor="#fff"
-              style={{ height: 35, width: 35 }}
             />
           </div>
         </div>

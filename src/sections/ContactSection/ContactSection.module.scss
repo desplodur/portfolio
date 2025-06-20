@@ -23,6 +23,17 @@
   width: 70vw;
 }
 
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5rem;
+  width: auto;
+  padding: 0.5rem;
+}
+
 @media (min-width: 800px) {
   .contactContent {
     display: grid;
