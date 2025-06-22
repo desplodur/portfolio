@@ -19,6 +19,14 @@ const AboutSection: React.FC = () => {
               className={styles.TypewriterText}
               text={t("about.description")}
             />
+            I am passionate about developing since i was little. My main
+            motivation which brought me into web development was the possibility
+            to create something that can be used by anyone, anywhere in the
+            world. I love the idea of building applications that can make
+            people's lives easier and more enjoyable. Soon i realized that a
+            good developer is only limited by his mindset. Thts why i did not go
+            the "normal" way by studying in a university, but instead i started
+            to learn on my own.
           </div>
         </div>
       </div>
