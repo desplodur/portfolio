@@ -8,7 +8,7 @@
 /* Global Styles */
 html,
 body {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   overflow: hidden;
 }
@@ -51,7 +51,9 @@ body {
 }
 
 .section {
-  min-height: 100%;
+  height: calc(100% - env(safe-area-inset-bottom));
+  /* Fallback */
+  height: calc(100% - constant(safe-area-inset-bottom));
   padding: var(--section-padding);
   display: flex;
   flex-direction: column;
@@ -105,4 +107,7 @@ body {
   // /* Ensure the body takes full height for cursor tracking */
   // min-height: 100vh;
   min-height: -webkit-fill-available;
+  padding-bottom: env(safe-area-inset-bottom);
+  /* Fallback für ältere iOS */
+  padding-bottom: constant(safe-area-inset-bottom);
 }
