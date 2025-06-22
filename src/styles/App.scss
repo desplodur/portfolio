@@ -102,6 +102,7 @@ body {
 }
 
 body {
-  /* Ensure the body takes full height for cursor tracking */
-  min-height: 100vh;
+  // /* Ensure the body takes full height for cursor tracking */
+  // min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
